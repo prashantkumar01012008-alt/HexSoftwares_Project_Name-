@@ -1,0 +1,100 @@
+# Fibonacci Generator in Python 🐍
+
+This project demonstrates how to generate Fibonacci numbers using a **Python Generator**.
+The program allows the **user to choose how many Fibonacci numbers** they want to display.
+
+---
+
+## 📌 Features
+
+* Uses Python generator (`yield`)
+* User-defined range
+* Memory efficient
+* Beginner-friendly code
+* Infinite Fibonacci sequence support
+
+---
+
+## 🧠 What is Fibonacci Series?
+
+The Fibonacci series is a sequence where each number is the sum of the two preceding numbers.
+
+Example:
+
+```
+0 1 1 2 3 5 8 13 21 ...
+```
+
+---
+
+## 💻 Python Code
+
+```python
+def fib():
+    a, b = 0, 1
+    while True:
+        yield a
+        a, b = b, a + b
+
+n = int(input("Enter number of Fibonacci terms: "))
+
+f = fib()
+
+for i in range(n):
+    print(next(f), end=" ")
+```
+
+---
+
+## ▶️ How to Run
+
+### Step 1: Clone Repository
+
+```
+git clone https://github.com/your-username/your-repo-name.git
+```
+
+### Step 2: Open Project Folder
+
+```
+cd your-repo-name
+```
+
+### Step 3: Run Python File
+
+```
+python project1.py
+```
+
+---
+
+## 📷 Example Output
+
+```
+Enter number of Fibonacci terms: 7
+0 1 1 2 3 5 8
+```
+
+---
+
+## 🛠️ Technologies Used
+
+* Python
+* Generator Function
+* VS Code
+
+---
+
+## 📚 Concepts Covered
+
+* Python Generators
+* yield keyword
+* Infinite sequence
+* User input handling
+* Loop control
+
+---
+
+## ⭐ Support
+
+If you like this project, consider giving it a ⭐ on GitHub!
